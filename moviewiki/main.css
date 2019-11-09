@@ -1,0 +1,14 @@
+body {
+    background-color: dodgerblue;
+  }
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.card {
+    -webkit-box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
+box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
+}
