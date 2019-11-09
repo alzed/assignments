@@ -1,0 +1,22 @@
+{
+  "name": "json-merge",
+  "version": "1.0.0",
+  "description": "Merge json file in a folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alzed/fw-assign.git"
+  },
+  "author": "Madhumitha Ravishankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alzed/fw-assign/issues"
+  },
+  "homepage": "https://github.com/alzed/fw-assign#readme",
+  "dependencies": {
+    "yargs": "^14.2.0"
+  }
+}
