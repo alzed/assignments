@@ -69,3 +69,4 @@ result.forEach(res => {
 
 //Writing merged object data output JSON file
 fs.writeFileSync(merge, JSON.stringify(answer));
+console.log(`Merge file created: ${merge}`);
