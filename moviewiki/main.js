@@ -16,7 +16,7 @@ btn.addEventListener('click', function (event) {
 async function find() {
     console.log('search');
     let keyword = document.getElementById('search').value;
-    let res = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=813bdc23&s=${keyword}`);
+    let res = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=813bdc23&s=${keyword}&page=${page}`);
     let data = await res.json();
     let result = document.getElementById('result');
     result.innerHTML = createResult(data);
@@ -24,14 +24,15 @@ async function find() {
 }
 
 function createResult(data) {
-    let card = " "
+    let card = " ";
+    console.log(data);
     data.Search.forEach((movie) => {
-        card += `<div class="card">
-        <img src="${movie.Poster}" alt="${movie.imdbID}">
+        card += `<a href="/moviewiki/movie.html?${movie.imdbID}"> <div class="card" id="${movie.imdbID}">
+        <img src="${movie.Poster}" id="${movie.imdbID}" alt="${movie.Title}">
         <div class="container center">
           <p>${movie.Title}</p>
         </div>
-        </div> `        
+        </div> </a>`        
     });
     return card;
 }

@@ -1,10 +1,10 @@
 body {
-    background-color: dodgerblue;
+    background-color: beige;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
 h1 {
-    color: white;
+    color: rgb(46, 42, 42);
     text-align: center;
     font-size: 48px;
 }
@@ -64,3 +64,16 @@ form button{
     -moz-box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
     box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
 }
+
+#movie section{
+    display: flex;
+    -webkit-box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
+    box-shadow: 9px 9px 25px -5px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+#movie section header{
+    padding: 20px;
+    
+} 
