@@ -1,7 +1,7 @@
 const imdbId = window.location.search.substr(1)
 
 async function fetchMovie(){
-    let res = await fetch(`http://www.omdbapi.com/?i=${imdbId}&apikey=813bdc23&plot=full`);
+    let res = await fetch(`https://www.omdbapi.com/?i=${imdbId}&apikey=813bdc23&plot=full`);
     let data = await res.json();
     const movie = document.getElementById("movie");
     movie.innerHTML = `<section>
