@@ -27,12 +27,17 @@ files.forEach((file) => {
     readFile = path.join(options.folder, file);
     let stats = fs.statSync(readFile);
     let fileSizeInBytes = stats["size"];
-    if (fileSizeInBytes <= options.max && fileSizeInBytes > 0) {
-        let read = fs.readFileSync(readFile);
-        result.push(JSON.parse(read));
+    if (fileSizeInBytes <= options.max) {
+        if (fileSizeInBytes > 0) {
+            let read = fs.readFileSync(readFile);
+            result.push(JSON.parse(read));
+        }
+        else{
+            console.log(`File empty, skipping: ${file}`);
+        }
     }
     else {
-        console.log(`File size exceeded or empty: ${file}`);
+        console.log(`File size exceeded: ${file}`);
     }
 });
 
