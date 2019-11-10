@@ -30,6 +30,11 @@ Options:
 After running this command successfully, you can find a merged json file in the given input folder.
 > Technology used: NodeJS, Yargs
 
+> Algorithmic time complexity: O(nk)
+>  - n - number of files to be merged
+>  - k - distinct root keys of the merged file
+
+
 
 ## MovieWiki
 
