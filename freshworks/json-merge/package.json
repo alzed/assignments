@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alzed/fw-assign.git"
+    "url": "git+https://github.com/alzed/assignments.git"
   },
   "author": "Madhumitha Ravishankar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alzed/fw-assign/issues"
+    "url": "https://github.com/alzed/assignments/issues"
   },
-  "homepage": "https://github.com/alzed/fw-assign#readme",
+  "homepage": "https://github.com/alzed/assignments#readme",
   "dependencies": {
     "yargs": "^14.2.0"
   }
