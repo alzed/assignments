@@ -5,8 +5,8 @@ Merges a series of files containing JSON array of Objects into a single file con
 ### Getting started
 Clone the project
 ```bash 
-git clone "https://github.com/alzed/fw-assign.git"
-cd fw-assign/json-merge
+git clone "https://github.com/alzed/assignments.git"
+cd assignments/freshworks/json-merge
 ```
 To run the project
 ```bash
